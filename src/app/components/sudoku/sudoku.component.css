@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+#board {
+
+}
+
+.levels {
+
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    column-gap: 1%;
+}
+
+.numbers p {
+    border: 1px solid;
+    border-radius: 30%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.numSelect {
+    background-color: lightgray;
+}

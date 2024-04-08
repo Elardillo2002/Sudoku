@@ -1,0 +1,15 @@
+<h1> Sudoku </h1>
+
+<div id="board" *ngIf="sudokuItem">
+    <div *ngFor="let fila of sudokuItem.RawSudoku[level]">
+        {{ fila }}
+    </div>
+</div>
+<div class="levels"></div>
+<div class="numbers">
+    <p *ngFor="let number of [1, 2, 3, 4, 5, 6, 7, 8, 9]" 
+    [ngClass]="{'numSelect': numSelect == number}"
+    (click)="selectNumber(number)">
+        {{ number }}
+    </p>
+</div>
