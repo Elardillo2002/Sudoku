@@ -2,12 +2,21 @@ h1 {
     text-align: center;
 }
 
-#board {
-
+hr {
+    width: 500px;
 }
 
-.levels {
+#board {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
+    text-align: center;
+    justify-content: center;
+}
 
+.tile {
+    font-size: 25px;
 }
 
 .numbers {
@@ -29,3 +38,77 @@ h1 {
 .numSelect {
     background-color: lightgray;
 }
+
+/* 
+
+.numbers, 
+.tile {
+    font-size: 20px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers {
+    width: 44px; 
+    height: 44px;
+    border: 1px solid;
+    margin: 20px 2px;
+}
+
+.tile {
+    border: 1px solid lightgray;
+    height: 48px;
+    width: 48px; 
+}
+
+.number-selected {
+    background-color: #d2cecb;
+}
+
+.tile-start {
+    background-color: whitesmoke;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid;
+}
+
+.vertical-line {
+    border-right: 1px solid;
+}
+
+.selectLevels {
+    border: 1px solid;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#board, 
+#digits {
+    width: 450px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#board {
+    height: 450px;    
+}
+
+#digits {
+    height: 50px;
+}
+
+#levels {
+    position: absolute;
+    right: 0;
+    top: 20px;
+} */
