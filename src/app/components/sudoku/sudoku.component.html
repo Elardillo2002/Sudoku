@@ -1,11 +1,14 @@
 <h1> Sudoku </h1>
+<button (click)="previousLevel()" id="previous" [disabled]="level == 0"> &lt; </button>
+<button id="level"> Nivel {{ level + 1 }} </button>
+<button (click)="nextLevel()" id="next" [disabled]="level === dataLength"> &gt; </button>
 <hr>
 <div id="board"></div>
-<div class="levels"></div>
 <div class="numbers">
     <p *ngFor="let number of [1, 2, 3, 4, 5, 6, 7, 8, 9]" 
     [ngClass]="{'numSelect': numSelect == number}"
     (click)="selectNumber(number)">
         {{ number }}
     </p>
+    <button (click)="check()">Comprobar</button>
 </div>
